@@ -1,0 +1,35 @@
+{
+  "name": "safe-view-transition",
+  "version": "0.0.0",
+  "description": "Safely use the View Transitions API",
+  "main": "dist/index.mjs",
+  "types": "dist/index.d.mts",
+  "exports": {
+    ".": {
+      "types": {
+        "import": "./dist/index.d.mts",
+        "default": "./dist/index.d.ts"
+      },
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "node": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "build:watch": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "check-package-json": "publint && attw"
+  },
+  "keywords": [],
+  "author": "Soorria Saruva <soorria.ss@gmail.com> (https://soorria.com/)",
+  "license": "MIT",
+  "devDependencies": {
+    "@arethetypeswrong/cli": "^0.7.0",
+    "@changesets/cli": "^2.26.2",
+    "publint": "^0.1.16",
+    "tsup": "^7.1.0",
+    "typescript": "^5.1.6"
+  }
+}
