@@ -24,7 +24,7 @@ export function safeViewTransition(
      */
     ignoreMotionPreference?: boolean
   } = {}
-) {
+): void {
   const isMotionOk = motionSafe || opts.ignoreMotionPreference
 
   if (
