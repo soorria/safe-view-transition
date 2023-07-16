@@ -1,5 +1,11 @@
 # safe-view-transition
 
+## 0.1.3
+
+### Patch Changes
+
+- 4a685bd: Add explicit return type to safeViewTransition
+
 ## 0.1.2
 
 ### Patch Changes
