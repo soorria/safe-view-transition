@@ -20,7 +20,7 @@
     "build": "tsup",
     "build:watch": "tsup --watch",
     "typecheck": "tsc --noEmit",
-    "check-package-json": "publint && attw",
+    "check-package-json": "publint && attw --pack .",
     "release": "pnpm run build && changeset publish"
   },
   "keywords": [],
