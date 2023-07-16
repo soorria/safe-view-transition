@@ -1,6 +1,6 @@
 {
   "name": "safe-view-transition",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Safely use the View Transitions API",
   "main": "dist/index.mjs",
   "types": "dist/index.d.mts",
