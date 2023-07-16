@@ -1,5 +1,11 @@
 # safe-view-transition
 
+## 0.1.2
+
+### Patch Changes
+
+- 58e149c: Update package.json with repo url and release action options
+
 ## 0.1.1
 
 ### Patch Changes
