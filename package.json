@@ -20,7 +20,8 @@
     "build": "tsup",
     "build:watch": "tsup --watch",
     "typecheck": "tsc --noEmit",
-    "check-package-json": "publint && attw"
+    "check-package-json": "publint && attw",
+    "release": "pnpm run build && changeset publish"
   },
   "keywords": [],
   "author": "Soorria Saruva <soorria.ss@gmail.com> (https://soorria.com/)",
