@@ -1,5 +1,11 @@
 # safe-view-transition
 
+## 0.2.0
+
+### Minor Changes
+
+- fd4bcca: feat: add react helper
+
 ## 0.1.3
 
 ### Patch Changes
