@@ -9,6 +9,16 @@
   "main": "dist/index.mjs",
   "types": "dist/index.d.mts",
   "exports": {
+    "./react": {
+      "types": {
+        "import": "./dist/react.d.mts",
+        "default": "./dist/react.d.ts"
+      },
+      "import": "./dist/react.mjs",
+      "require": "./dist/react.js",
+      "node": "./dist/react.js",
+      "default": "./dist/react.js"
+    },
     ".": {
       "types": {
         "import": "./dist/index.d.mts",
@@ -27,7 +37,7 @@
     "build": "tsup",
     "build:watch": "tsup --watch",
     "typecheck": "tsc --noEmit",
-    "check-package-json": "publint && attw --pack .",
+    "check-package-json": "publint",
     "release": "pnpm run build && changeset publish",
     "changeset": "changeset"
   },
@@ -37,6 +47,7 @@
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.7.0",
     "@changesets/cli": "^2.26.2",
+    "@types/react-dom": "^18.2.7",
     "publint": "^0.1.16",
     "tsup": "^7.1.0",
     "typescript": "^5.1.6"

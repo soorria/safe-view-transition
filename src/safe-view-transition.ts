@@ -15,15 +15,17 @@ type ObjectWithStartViewTransition = {
   startViewTransition: StartViewTransitionFn
 }
 
+export type SafeViewTransitionOptions = {
+  /**
+   * Should we ignore the user's motion preference and always try to run the
+   * transition?
+   */
+  ignoreMotionPreference?: boolean
+}
+
 export function safeViewTransition(
   callback: ViewTransitionCallback,
-  opts: {
-    /**
-     * Should we ignore the user's motion preference and always try to run the
-     * transition?
-     */
-    ignoreMotionPreference?: boolean
-  } = {}
+  opts: SafeViewTransitionOptions = {}
 ): void {
   const isMotionOk = motionSafe || opts.ignoreMotionPreference
 
