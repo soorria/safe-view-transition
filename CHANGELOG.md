@@ -1,5 +1,11 @@
 # safe-view-transition
 
+## 0.2.1
+
+### Patch Changes
+
+- 7e5314a: re-publish
+
 ## 0.2.0
 
 ### Minor Changes
