@@ -19,6 +19,16 @@
       "node": "./dist/react.js",
       "default": "./dist/react.js"
     },
+    "./vue": {
+      "types": {
+        "import": "./dist/vue.d.mts",
+        "default": "./dist/vue.d.ts"
+      },
+      "import": "./dist/vue.mjs",
+      "require": "./dist/vue.js",
+      "node": "./dist/vue.js",
+      "default": "./dist/vue.js"
+    },
     ".": {
       "types": {
         "import": "./dist/index.d.mts",
