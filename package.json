@@ -32,7 +32,8 @@
   },
   "files": [
     "dist",
-    "react"
+    "react",
+    "vue"
   ],
   "scripts": {
     "build": "tsup",
