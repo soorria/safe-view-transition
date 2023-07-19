@@ -28,3 +28,4 @@ safeViewTransition(() => {
 
 - [Vanilla JS](https://stackblitz.com/edit/vitejs-vite-i9dur1?file=main.js)
 - [VueJS (3)](https://stackblitz.com/edit/vitejs-vite-8djczd?file=src%2FApp.vue)
+- [React](https://stackblitz.com/edit/vitejs-vite-n6qsvz?file=src%2FApp.tsx)
