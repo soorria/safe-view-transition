@@ -13,16 +13,43 @@ npm i safe-view-transition
 You can use this _almost_ the same way as [`document.startViewTransition`](https://developer.mozilla.org/en-US/docs/Web/API/Document/startViewTransition):
 
 ```ts
-import { safeViewTransition } from 'safe-view-transition';
+import { safeViewTransition } from 'safe-view-transition'
 
-safeViewTransition(() => {
-  // do the dom changes
-}, { /* options */ });
+safeViewTransition(
+  () => {
+    // do the dom changes
+  },
+  {
+    /* options */
+  }
+)
 ```
 
 ### `options`
 
 - `ignoreMotionPreference`: when `true`, we'll try to do a transition even if the `(prefers-reduced-motion: no-preference)` media query **isn't** matched.
+
+### React
+
+If you're using react, you should use the helper from `safe-view-transition` like so:
+
+```ts
+import { safeViewTransition } from 'safe-view-transition/react';
+
+function Component() {
+  const updateState = () => {
+    safeViewTransition(() => {
+      // Update state here
+    })
+  }
+
+  return ( /* your cool JSX */ )
+}
+
+```
+
+> **Warning**
+> This helper uses [`flushSync`](https://react.dev/reference/react-dom/flushSync), to cause side effects for state updates (like updating the real DOM) to happen immediately, but it can hurt the performance of your app.
 
 ## Examples
 
