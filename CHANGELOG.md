@@ -1,5 +1,11 @@
 # safe-view-transition
 
+## 0.3.2
+
+### Patch Changes
+
+- 01bb1fd: docs: show vue helper options in vue usage
+
 ## 0.3.1
 
 ### Patch Changes
