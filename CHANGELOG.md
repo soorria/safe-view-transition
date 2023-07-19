@@ -1,5 +1,12 @@
 # safe-view-transition
 
+## 0.3.1
+
+### Patch Changes
+
+- a7a3028: fix: update build config for vue subpath
+- a5da738: fix: add export conditions for vue helper
+
 ## 0.3.0
 
 ### Minor Changes
