@@ -1,5 +1,11 @@
 # safe-view-transition
 
+## 0.3.0
+
+### Minor Changes
+
+- 45da7c5: feat: add vue helper
+
 ## 0.2.3
 
 ### Patch Changes

@@ -1,6 +1,6 @@
 {
   "name": "safe-view-transition",
-  "version": "0.2.3",
+  "version": "0.3.0",
   "description": "Safely use the View Transitions API",
   "repository": {
     "type": "git",
