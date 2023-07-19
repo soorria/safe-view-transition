@@ -1,7 +1,7 @@
 import { defineConfig } from 'tsup'
 
 export default defineConfig((options) => ({
-  entry: ['src/index.ts', 'src/react.ts'],
+  entry: ['src/index.ts', 'src/react.ts', 'src/vue.ts'],
   format: ['esm', 'cjs'],
   dts: true,
   clean: true,
@@ -9,5 +9,5 @@ export default defineConfig((options) => ({
 
   minify: !options.watch,
 
-  external: ['react-dom'],
+  external: ['react-dom', 'vue'],
 }))
