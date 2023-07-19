@@ -1,0 +1,5 @@
+{
+  "main": "../dist/vue.js",
+  "module": "../dist/vue.mjs",
+  "types": "../dist/vue.d.ts"
+}

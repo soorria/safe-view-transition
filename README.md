@@ -29,11 +29,36 @@ safeViewTransition(
 
 - `ignoreMotionPreference`: when `true`, we'll try to do a transition even if the `(prefers-reduced-motion: no-preference)` media query **isn't** matched.
 
+### Vue 3
+
+If you're using Vue, you should use the helper from `safe-view-transition` like so:
+
+```vue 
+<script setup lang="ts">
+import { safeViewTransition } from 'safe-view-transition/vue'
+
+const updateState = () => {
+  safeViewTransition(() => {
+    // Update state here
+  })
+}
+</script>
+
+<template>
+  <!-- your cool template -->
+</template>
+```
+
+#### Extra `options`
+
+- `useNextTick`. when `true`, after calling the provided callback, we'll wait for the current tick to complete before the transition starts. Defaults to `true`.
+
+
 ### React
 
-If you're using react, you should use the helper from `safe-view-transition` like so:
+If you're using React, you should use the helper from `safe-view-transition` like so:
 
-```ts
+```tsx
 import { safeViewTransition } from 'safe-view-transition/react';
 
 function Component() {
