@@ -33,14 +33,20 @@ safeViewTransition(
 
 If you're using Vue, you should use the helper from `safe-view-transition` like so:
 
-```vue 
+```vue
 <script setup lang="ts">
 import { safeViewTransition } from 'safe-view-transition/vue'
 
 const updateState = () => {
-  safeViewTransition(() => {
-    // Update state here
-  })
+  safeViewTransition(
+    () => {
+      // Update state here
+    },
+    {
+      // This defaults to true, but you can change it to false
+      useNextTick: true,
+    }
+  )
 }
 </script>
 
@@ -52,7 +58,6 @@ const updateState = () => {
 #### Extra `options`
 
 - `useNextTick`. when `true`, after calling the provided callback, we'll wait for the current tick to complete before the transition starts. Defaults to `true`.
-
 
 ### React
 
