@@ -48,7 +48,7 @@ function Component() {
 
 ```
 
-> **Warning**
+> **Warning**  
 > This helper uses [`flushSync`](https://react.dev/reference/react-dom/flushSync), to cause side effects for state updates (like updating the real DOM) to happen immediately, but it can hurt the performance of your app.
 
 ## Examples
