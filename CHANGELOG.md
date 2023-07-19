@@ -1,5 +1,12 @@
 # safe-view-transition
 
+## 0.2.2
+
+### Patch Changes
+
+- c25bc9e: chore: better subpath support for react version
+- 4d0f9ac: docs: add link to React example
+
 ## 0.2.1
 
 ### Patch Changes
