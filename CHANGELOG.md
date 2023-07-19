@@ -1,5 +1,12 @@
 # safe-view-transition
 
+## 0.2.3
+
+### Patch Changes
+
+- 772ac9b: docs: update spacing for react helper warning
+- 3100b10: docs: add react usage
+
 ## 0.2.2
 
 ### Patch Changes
